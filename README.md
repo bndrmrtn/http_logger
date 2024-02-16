@@ -2,10 +2,25 @@
 
 It's a simple tool to monitor your requests during development.
 
+## How it looks?
+
+Minimal, cool. ;)
+
+Here is an example, but colors also added.
+
+```
+  GET /api/v1/something .................... 11:05:12
+```
+
 ## How to?
 
 SUPER EASY!
-Just define a variable `logger` and then use it's `Log` method:
+Jownload the package:
+```
+go get github.com/bndrmrtn/http_logger
+```
+
+Define a variable `logger` (or just use New().Log(...)) and then use it's `Log` method:
 
 ```go
 var logger = http_logger.New()
